@@ -3,6 +3,8 @@
 ## 内容目录
 
 - [数据结构](#数据结构)
+- [文本](#文本)
+- [文件格式](#文件格式)
 - [容器](#容器)
 - [数据库](#数据库)
   - [数据库驱动](#数据库驱动)
@@ -13,11 +15,22 @@
 
 ## 数据结构
 
+* [bytes](https://github.com/carllerche/bytes) - Utilities for working with bytes
+* [voca_rs](https://github.com/e1r0nd/voca_rs) - The ultimate Rust string library
+* [string](https://github.com/carllerche/string) - Rust String type with configurable byte storage.
 * [intrusive-rs](https://crates.io/crates/intrusive-collections) - 用于创建侵入式集合的Rust库。目前支持单链接和双链接列表，以及红黑树。
 * [linked-list](https://crates.io/crates/linked-list) - std :: collections :: LinkedList的替代实现
 * [phf](https://crates.io/crates/phf) - Rust编译时 static maps
 * [list_ursors](https://github.com/4e554c4c/list_cursors) - Linked list cursors
 * [concread](https://github.com/firstyear/concread) - Rust的并发可读数据结构
+
+## 文本
+
+* [Ropey](https://crates.io/crates/ropey) - Ropey is a utf8 text rope library, designed to be the backing text buffer for applications such as text editors
+
+## 文件格式
+
+* [tomlenv](https://github.com/rustyhorde/tomlenv)  Manage your environment configuration with TOML
 
 ## 数据库
 
@@ -192,22 +205,7 @@
 
 * [gravatar](https://crates.io/crates/gravatar)
 
-## Toml
 
-* [tomlenv](https://github.com/rustyhorde/tomlenv)  Manage your environment configuration with TOML
-
-## Byte
-
-* [bytes](https://github.com/carllerche/bytes) - Utilities for working with bytes
-
-## String
-
-* [voca_rs](https://github.com/e1r0nd/voca_rs) - The ultimate Rust string library
-* [string](https://github.com/carllerche/string) - Rust String type with configurable byte storage.
-
-## Text
-
-* [Ropey](https://crates.io/crates/ropey) - Ropey is a utf8 text rope library, designed to be the backing text buffer for applications such as text editors
 
 ## Profiler
 
