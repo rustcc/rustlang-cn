@@ -12,12 +12,12 @@
 ## 网络
 
 * [wapm](https://wapm.io/) - wapm is the WebAssembly Package Manager
-* [stdweb](https://github.com/koute/stdweb) - A standard library for the client-side Web
 
 ## Web
 
 * **官方[Awesome Rust and Webassembly](https://github.com/rustwasm/awesome-rust-and-webassembly)** - Facilitating high-level interactions between wasm modules and JavaScript
-* []()
+* [stdweb](https://github.com/koute/stdweb) - A standard library for the client-side Web
+
 
 ### Web框架
 
