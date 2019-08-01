@@ -2,17 +2,20 @@
 
 ## 公司
 
-- **Buoyant** : [linkerd2-proxy](https://github.com/linkerd/linkerd2-proxy)
+- Buoyant
+- Facebook
+- Microsoft
+- Amazon
 
 ## Awesome-Tokio
 
 **官方 :**
 
-- [Tokio英文站点](https://tokio.rs/)
-- [Tokio中文站点](https://rustlang-cn.org/crates/tokio/)
+- [Tokio英文](https://tokio.rs/)
+- [Tokio中文](https://rustlang-cn.org/crates/tokio/)
 - [Tokio](https://github.com/tokio.rs/tokio) : Rust编程语言的异步运行时,提供异步事件驱动平台
-- [hyper](https://github.com/hyperium/hyper) : An HTTP library for Rust
 - [tower](https://github.com/tower-rs) : tower server Service middlewares
+- [hyper](https://github.com/hyperium/hyper) : An HTTP library for Rust
 
 **社区 :**
 

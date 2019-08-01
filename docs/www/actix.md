@@ -2,15 +2,15 @@
 
 ## 公司
 
-- **微软** : [Actix](https://github.com/actix)
+- Microsoft
+- Mozilla
+- IBM
+- Functional Software
+- Chef Software
+- Bitfury Group Limited
+- Deepgram
+- Babylon
 
-- **Mozilla** : 
-  - [webthing-rust](https://github.com/mozilla-iot/webthing-rust) : Rust implementation of a Web Thing server
-  - [syncstorage](https://github.com/mozilla-services/syncstorage-rs) ： Sync Storage server in Rust
-
-- **Functional Software** : 
-  - [sentry-rust](https://github.com/getsentry/sentry-rust) : Sentry for Rust
-  - [semaphore](https://github.com/getsentry/semaphore) : Using big shuttered boxes rather than the old-fashioned semaphore arms. https://sentry.io/
 ## Awesome-Actix
 
 **官方库 :**

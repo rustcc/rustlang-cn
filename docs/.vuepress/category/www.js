@@ -2,7 +2,9 @@ exports.www = (title) => {
     return [
         'resource',
         'crates',
-        'tokio',
-        'actix'
+        'wasm',
+        'iot',
+        'actix',
+        'tokio'
     ]
 }

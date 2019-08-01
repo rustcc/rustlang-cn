@@ -24,8 +24,10 @@
 - [Awesome-Rust](https://github.com/rust-unofficial/awesome-rust/blob/master/README.md)
 - [Awesome-Rust中文](https://rustlang-cn.org/www/resource.html#rust%E4%B8%AD%E6%96%87)
 - [Awesome-Crates](https://rustlang-cn.org/www/crates.html)
-- [Awesome-Tokio](https://rustlang-cn.org/www/tokio.html)
+- [Awesome-Wasm](https://rustlang-cn.org/www/wasm.html)
+- [Awesome-IOT](https://rustlang-cn.org/www/iot.html)
 - [Awesome-Actix](https://rustlang-cn.org/www/actix.html)
+- [Awesome-Tokio](https://rustlang-cn.org/www/tokio.html)
 
 ## Rust语言
 
@@ -49,17 +51,6 @@
 
 * [Rust基础教程](https://nodelover.me/course/rust-basic)
 * [Rust 教程 | 中文字幕 - 系列视频](https://space.bilibili.com/331415319?spm_id_from=333.788.b_765f7570696e666f.2)
-
-## Wasm
-
-* [Awesome Rust and Webassembly](https://github.com/rustwasm/awesome-rust-and-webassembly)
-
-## 嵌入式
-
-* [Embedded WG](https://github.com/rust-embedded/wg)
-* [docs.rust-embedded.org](https://docs.rust-embedded.org/)
-* [awesome-embedded-rust](https://github.com/rust-embedded/awesome-embedded-rust)
-* [Rust 嵌入式开发](https://zhuanlan.zhihu.com/embedded-rust)
 
 ## 博客
 
