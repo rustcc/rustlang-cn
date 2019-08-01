@@ -1,19 +1,12 @@
 # Actix
 
-## 公司
+## 内容指南
 
-- Microsoft
-- Mozilla
-- IBM
-- Functional Software
-- Chef Software
-- Bitfury Group Limited
-- Deepgram
-- Babylon
+- [公司采用](#公司)
+- [官方](#官方)
+- [社区](#社区)
 
-## Awesome-Actix
-
-**官方库 :**
+## 官方
 
 - [Actix英文站点](https://actix.rs/)
 - [Actix中文站点](https://rustlang-cn.org/crates/actix/)
@@ -40,7 +33,7 @@
 - [actix-derive](https://github.com/actix/actix-derive) - Derive macro for actix framework
 - [examples](https://github.com/actix/examples) : Actix web examples
 
-**社区库 :**
+## 社区
 
 - [actix-redis-cluster](https://github.com/Idein/actix-redis-cluster) - actix-redis-cluster
 - [actix-mq-network](https://github.com/irony-rust/actix-mq-network) - Message queue distributed network based on Actix
@@ -61,3 +54,23 @@
 - [actix-json](https://github.com/mattlockyer/actix-json) - Actix Web - Async JSON Service Boilerplate
 - [actix-web-prom](https://github.com/nlopes/actix-web-prom) - Prometheus middleware for actix-web
 - [actix-web-lets-encrypt](https://github.com/ctm/actix-web-lets-encrypt) - Let's Encrypt SSL support for Actix web applications using acme-client
+
+
+## 公司
+
+- Microsoft
+- Mozilla
+- IBM
+- Nokia
+- Functional Software
+- Chef Software
+- Bitfury Group Limited
+- Deepgram
+- Babylon
+- NEAR
+- Substratum
+- INTENT HQ
+- Stichting NLnet Labs 
+- Linux Foundation Hyperledger
+- Akropolis Decentralised
+- Witnet Foundation
