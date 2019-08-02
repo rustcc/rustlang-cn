@@ -73,7 +73,7 @@ track_response_success(response_is_ok);
 
 所有与`future`一起采取的行动都不会立即执行任何工作。 他们不能，因为他们没有实际的HTTP响应。 相反，他们定义了响应`future`完成时要完成的工作。
 
-`futures`箱和`Tokio`都有一系列组合功能，可以用来处理`future`。 到目前为止，我们已经看到`and_then`将两个`future`链接在一起，然后允许将`future`链接到前一个，即使前一个错误，映射只是将`future`的值从一种类型映射到另一种类型。
+`futures` crate和`Tokio`都有一系列组合功能，可以用来处理`future`。 到目前为止，我们已经看到`and_then`将两个`future`链接在一起，然后允许将`future`链接到前一个，即使前一个错误，映射只是将`future`的值从一种类型映射到另一种类型。
 
 我们将在本指南后面探索更多的组合器。
 
