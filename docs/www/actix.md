@@ -54,8 +54,7 @@
 - [actix-json](https://github.com/mattlockyer/actix-json) - Actix Web - Async JSON Service Boilerplate
 - [actix-web-prom](https://github.com/nlopes/actix-web-prom) - Prometheus middleware for actix-web
 - [actix-web-lets-encrypt](https://github.com/ctm/actix-web-lets-encrypt) - Let's Encrypt SSL support for Actix web applications using acme-client
-
-
+- [actix-csrf](https://github.com/SnoozeTime/actix-csrf) - Middleware for CSRF protection for actix-web
 ## 公司
 
 - Microsoft
