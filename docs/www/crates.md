@@ -11,10 +11,10 @@
 - [GUI](#gui)
   - [Web](#web)
   - [Native](#native)
-- [科学计算](#科学计算)
 - [Server](#server)
 - [wasm](#server)
 - [IOT](#iot)
+- [科学计算](#科学计算)
 
 ## 数据结构
 
