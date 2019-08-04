@@ -38,7 +38,7 @@
 
 ### Tools
 
-* [wasm-bindgen](https://github.com/rustwasm/wasm-bindgen)
+* [wasm-bindgen](https://github.com/rustwasm/wasm-bindgen) - Facilitating high-level interactions between Wasm modules and JavaScript.
 * [wasm-pack](https://github.com/rustwasm/wasm-pack) - packagesparkles your favorite rust -> wasm workflow tool!
 * [woz](https://github.com/alexkehayias/woz) - Woz is a WebAssembly progressive web app (PWA) toolchain for building and deploying performant mobile apps with Rust
 * [cargo-web](https://github.com/koute/cargo-web) - A Cargo subcommand for the client-side Web
