@@ -8,11 +8,12 @@
 
 ## 官方
 
-- [Actix英文站点](https://actix.rs/)
-- [Actix中文站点](https://rustlang-cn.org/crates/actix/)
+- [Actix英文](https://actix.rs/)
+- [Actix中文](https://rustlang-cn.org/crates/actix/)
 - [actix](https://github.com/actix/actix) : Actor framework for Rust
 - [actix-net](https://github.com/actix/actix-net) : 可组合网络服务的框架
 - [actix-web](https://github.com/actix/actix-web) : Actix web is a rust web framework.
+- [actix-http](https://github.com/actix/actix-http) actix http library
 - [actix-mqtt](https://github.com/actix/actix-mqtt) - Actix MQTT v3.1 Server framework
 - [actix-codec](https://docs.rs/actix-codec/) : actix-codec Utilities for encoding and decoding frames
 - [actix-connect](https://docs.rs/actix-connect/) : actix-connect tcp connector service
@@ -21,7 +22,6 @@
 - [actix-threadpool](https://docs.rs/actix-threadpool/) : actix-threadpool
 - [actix-router](https://docs.rs/actix-router/) : Path router
 - [actix-tower](https://docs.rs/actix-tower/) : actix-tower
-- [actix-http](https://github.com/actix/actix-http) actix http library
 - [awc](https://docs.rs/awc/0.2.0/awc/) : Actix HTTP Client
 - [actix-files](https://docs.rs/actix-files/) : Actix-files
 - [actix-framed](https://docs.rs/actix-framed/) : actix-framed
@@ -35,6 +35,7 @@
 
 ## 社区
 
+- [actix-raft](https://github.com/railgun-rs/actix-raft) - An implementation of the Raft consensus protocol using the actix framework.
 - [actix-redis-cluster](https://github.com/Idein/actix-redis-cluster) - actix-redis-cluster
 - [actix-mq-network](https://github.com/irony-rust/actix-mq-network) - Message queue distributed network based on Actix
 - [actix-rate-limit](https://github.com/Idein/actix-rate-limit) - actix-rate-limit
