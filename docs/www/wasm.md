@@ -22,7 +22,7 @@
 ### Web框架
 
 * [gloo](https://github.com/rustwasm/gloo) - A modular toolkit for building fast, reliable Web applications and libraries with Rust and Wasm
-* [Yew](https://github.com/DenisKolodin/yew) - Rust framework for building client web apps
+* [Yew](https://github.com/yewstack/yew) - Rust framework for building client web apps
 * [smithy](https://github.com/rbalicki2/smithy)	- A Rust framework for front-end web development 
 * [plaster](https://github.com/carlosdp/plaster) - WIP Idiomatic Frontend Web Framework for Rust / WebAssembly
 * [percy](https://github.com/chinedufn/percy)	- A modular toolkit for building isomorphic web apps with Rust + WebAssembly 
