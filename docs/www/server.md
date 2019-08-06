@@ -16,6 +16,7 @@
 ## 中间件
 
 * [onyxiafs](https://github.com/divinerapier/onyxiafs) - OnyxiaFS 是一个基于 Facebook Inc. 在 2010 发表的论文 开发的一个分布式对象文件系统。
+* [rpcx-rs](https://github.com/smallnest/rpcx-rs) - Rust library for rpcx rpc/microservice framework.
 
 ## HTTP
 
