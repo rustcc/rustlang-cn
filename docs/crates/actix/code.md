@@ -11,11 +11,10 @@
         <li class="nav"><a href="/crates/actix/community.html">社区</a></li>
         <li class="nav"><a href="/crates/actix/code.html">源码</a></li>
     </div>
-    
 </div>
 </div>
 
-<div id="lanmu" style="text-align: center;">
+<div id="actix-lanmu" style="text-align: center;">
     <div id="word">浏览并下载资源</div>
 </div>
 

@@ -1,4 +1,6 @@
-# [Serde](https://serde.rs/)框架
+# [Serde](https://serde.rs/)
+
+> [Serde英文](https://serde.rs/) - [Serde中文](/crates/serde/) - [API文档](https://docs.rs/serde/) - [Github](https://github.com/serde-rs/serde)
 
 ---
 

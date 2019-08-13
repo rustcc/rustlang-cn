@@ -1,5 +1,7 @@
 # [Diesel](https://diesel.rs)
 
+> [Diesel英文](https://diesel.rs/) - [Diesel中文](/crates/diesel/) - [API文档](https://docs.rs/diesel/) - [Github](https://github.com/diesel-rs/diesel)
+
 Diesel是Rust的安全，可扩展的ORM和查询生成器,Diesel是与Rust中数据库交互的最有效方式，因为它对查询的安全和可组合抽象。
 
 ## 为何创造Diesel

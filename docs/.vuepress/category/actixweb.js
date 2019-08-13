@@ -49,7 +49,6 @@ exports.actixweb = (title) => {
             'database',
             'sentry'
           ]
-        },
-        'resource'
+        }
     ]
 }

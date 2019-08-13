@@ -7,7 +7,6 @@ exports.diesel = (title) => {
         'composing-applications-with-diesel',
         'schema-in-depth',
         'extending-diesel',
-        'configuring-diesel-CLI',
-        'resource'
+        'configuring-diesel-CLI'
     ]
 }

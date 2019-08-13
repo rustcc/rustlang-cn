@@ -12,8 +12,6 @@ exports.actix = (title) => {
         'IO-helpers',
         'supervisor',
         'registry',
-        'helper-actors',
-        'resource'
-
+        'helper-actors'
     ]
 }
