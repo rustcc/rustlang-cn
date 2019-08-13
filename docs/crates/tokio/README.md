@@ -11,7 +11,6 @@
         <li class="nav"><a href="/crates/tokio/blog/2018-12-recap-2018.html">博客</a></li>
         <li class="nav"><a href="/crates/tokio/resource.html">资源</a></li>
     </div>
-    
 </div>
 
 <div id="show">

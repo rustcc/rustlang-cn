@@ -14,7 +14,7 @@
 </div>
 </div>
 
-<div id="actix-lanmu" style="text-align: center;">
+<div id="actix-lanmu">
     <div id="word">生活中最美好的事情是分享</div>
 </div>
 

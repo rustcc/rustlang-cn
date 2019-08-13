@@ -17,10 +17,10 @@
 
 ## 资源
 
-[官网](https://tokio.rs/)
+[Tokio英文](https://tokio.rs/)
 
-[StableAPI](https://docs.rs/tokio/0.1.15/tokio/)
+[Tokio中文](/crates/tokio/)
 
-[MasterAPI](https://tokio-rs.github.io/tokio/doc/tokio/index.html)
+[API文档 ](https://docs.rs/tokio/)
 
 [Github](https://github.com/tokio-rs)

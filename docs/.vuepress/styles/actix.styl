@@ -1,9 +1,3 @@
-#actix #actix-nav, #actix #show {
-    margin: 0 -20%;
-}
-#actix #actix-features, #actix #detail  {
-    margin: 0 -10%;
-}
 #actix-features ul, #actix-features ol, #actix-features li {
     list-style: none;
 }
@@ -19,68 +13,139 @@
 
 #actix #actix-nav .title {
     flex: 1;
-    margin-left: 55%;
 }
 
 #actix #actix-nav .nav {
     display inline-block;
-    font-size: 1.5rem;
-    padding-left: 1rem;
 }
 #actix #show {
     background-image: url(https://raw.githubusercontent.com/actix/actix-website/master/static/img/jumbotron.jpg);
     background-size: cover;
     text-align: center;
-    padding: 1rem 11rem;
-    margin-top: 0.5rem;
 }
-#actix #show img {
-    width: 70%;
-    height: 70%;
-}
-
 #actix #show #word {
     color: #ffffff;
-    font-size: 1.5rem; 
 }
 
-#actix #actix-features {
-    display: flex;
-}
-
-#actix #actix-features .left {
-    padding-right: 0.6rem;
-}
 #actix #actix-features .left .feature {
     font-size: 1.2rem;
     font-weight: bold;
 }
 
-#actix #actix-features .right {
-    flex: 1;
-    width: 61%;
-}
-
 //-----------------community/code----------------------------
 
 #actix-lanmu  {
-    background: linear-gradient(315deg,  #f5c4d4 0%,  #c4f5ed 100%);
-    border: none;
-    width : 100%;
-    height: 11rem;
+    text-align: center;
+    margin-top: 1rem;
 }
 
 #actix-lanmu #word {
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-size: 2rem;
     color: #7B463D;
-    padding: 4rem 0;
-    line-height: 3.3rem; 
+    padding: 1rem 0;
+    line-height: 2.5rem; 
+    background: linear-gradient(315deg,  #f5c4d4 0%,  #c4f5ed 100%);
 }
 
-@media (max-width: 460px) {
-    #actix-lanmu #word {
-        padding: 3rem 0;
-        line-height: 3.3rem; 
+//-------------------mobile-----------------------------------
+
+@media (max-width: 420px) {
+    #actix #actix-nav .title {
+        margin-left: 2%;
+    }
+    #actix #actix-nav .nav {
+        font-size: 1.3rem;
+        padding-left: 0.1rem;
+    }
+    #actix #actix-nav .logo {
+        width: 4rem;
+    }
+    #actix #show {
+        margin-top: 1.5rem;
+        padding-top: 1rem;
+    }
+    #actix #show img {
+        width: 80%;
+    }
+    #actix #show #word {
+        font-size: 1.3rem; 
+        padding: 0 1rem 1rem;
+    }
+}
+@media (min-width: 421px) and (max-width: 768px) {
+    #actix #actix-nav .title {
+        margin-left: 8%;
+    }
+    #actix #actix-nav .nav {
+        font-size: 1.5rem;
+        padding-left: 1rem;
+    }
+    #actix #actix-nav .logo {
+        width:  4rem;
+    }
+    #actix #show {
+        margin-top: 1.3rem;
+    }
+    #actix #show img {
+        width: 60%;
+        padding-top: 1rem;
+    }
+    #actix #show #word {
+        font-size: 1.6rem; 
+        padding: 0 1rem 1rem;
+    }
+}  
+@media (min-width: 769px) and (max-width: 1099px) {
+    #actix #actix-nav .title {
+        margin-left: 33%;
+    }
+    #actix #actix-nav .nav {
+        font-size: 1.5rem;
+        padding-left: 1rem;
+    }
+    #actix #show {
+        padding: 1rem 11rem;
+        margin-top: 1rem;
+    }
+    #actix #show #word {
+        font-size: 1.6rem; 
+        padding: 0 1rem 1rem;
+    }
+}
+@media (min-width: 1100px) {
+    #actix #actix-nav, #actix #show {
+        margin: 0 -20%;
+    }
+    #actix #actix-features, #actix #detail  {
+        margin: 0 -10%;
+    }
+    #actix #actix-nav .title {
+        margin-left: 55%;
+    }
+
+    #actix #actix-nav .nav {
+        font-size: 1.5rem;
+        padding-left: 1rem;
+    }
+    #actix #show {
+        padding: 1rem 11rem;
+        margin-top: 1rem;
+    }
+    #actix #show img {
+        width: 70%;
+        height: 70%;
+    }
+    #actix #show #word {
+        font-size: 1.5rem; 
+    }
+    #actix #actix-features {
+        display: flex;
+    }
+    #actix #actix-features .left {
+        padding-right: 0.6rem;
+    }
+    #actix #actix-features .right {
+        flex: 1;
+        width: 61%;
     }
 }

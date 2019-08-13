@@ -14,8 +14,8 @@
 </div>
 </div>
 
-<div id="actix-lanmu" style="text-align: center;">
-    <div id="word">浏览并下载资源</div>
+<div id="actix-lanmu">
+    <div id="word">浏览下载资源</div>
 </div>
 
 所有的Actix代码都是开源的，可以在我们的github组织中找到: [actix
