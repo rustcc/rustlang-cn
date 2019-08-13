@@ -26,6 +26,7 @@
 - [Awesome-Crates](https://rustlang-cn.org/www/crates.html)
 - [Awesome-Wasm](https://rustlang-cn.org/www/wasm.html)
 - [Awesome-IOT](https://rustlang-cn.org/www/iot.html)
+- [Awesome-Server](https://rustlang-cn.org/www/server.html)
 - [Awesome-Actix](https://rustlang-cn.org/www/actix.html)
 - [Awesome-Tokio](https://rustlang-cn.org/www/tokio.html)
 
