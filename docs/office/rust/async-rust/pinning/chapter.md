@@ -4,12 +4,14 @@
 
 ## Why Pinning
 
-固定可以保证对象不会移动。要理解为什么这是必要的，我们需要记住`async/ await!` 如何工作。考虑以下代码：
+固定可以保证对象不会移动。要理解为什么这是必要的，我们需要记住`async/ .await` 如何工作。考虑以下代码：
 
 ```rust
-async {
-    await!(fut_one);
-    await!(fut_two);
+let fut_one = ...;
+let fut_two = ...;
+async move {
+    fut_one.await;
+    fut_two.await;
 }
 ```
 
@@ -22,14 +24,16 @@ struct AsyncFuture {
     fut_two: FutTwo,
     state: State,
 }
- // List of states our `async` block can be in
+
+// List of states our `async` block can be in
 enum State {
     AwaitingFutOne,
     AwaitingFutTwo,
     Done,
 }
- impl AsyncFuture {
-    fn poll(...) -> Poll<()> {
+
+impl Future for AsyncFuture {
+    fn poll(self: Pin<&mut Self>, cx: &mut Context<'_>) -> Poll<()> {
         loop {
             match self.state {
                 State::AwaitingFutOne => match self.fut_one.poll(..) {
@@ -55,7 +59,7 @@ enum State {
 async {
     let mut x = [0; 128];
     let read_into_buf_fut = read_into_buf(&mut x);
-    await!(read_into_buf_fut);
+    read_into_buf_fut.await;
     println!("{:?}", x);
 }
 ```
@@ -66,7 +70,8 @@ async {
 struct ReadIntoBuf<'a> {
     buf: &'a mut [u8], // points to `x` below
 }
- struct AsyncFuture {
+
+struct AsyncFuture {
     x: [u8; 128],
     read_into_buf_fut: ReadIntoBuf<'what_lifetime?>,
 }
@@ -88,15 +93,19 @@ For example:
 
 ```rust
 use pin_utils::pin_mut; // `pin_utils` is a handy crate available on crates.io
- // A function which takes a `Future` that implements `Unpin`.
+
+// A function which takes a `Future` that implements `Unpin`.
 fn execute_unpin_future(x: impl Future<Output = ()> + Unpin) { ... }
- let fut = async { ... };
-execute_unpin_future(fut); // Error: `fut` does not implement `Unpin` trait
- // Pinning with `Box`:
+
 let fut = async { ... };
-let fut = Box::pinned(fut);
+execute_unpin_future(fut); // Error: `fut` does not implement `Unpin` trait
+
+// Pinning with `Box`:
+let fut = async { ... };
+let fut = Box::pin(fut);
 execute_unpin_future(fut); // OK
- // Pinning with `pin_mut!`:
+
+// Pinning with `pin_mut!`:
 let fut = async { ... };
 pin_mut!(fut);
 execute_unpin_future(fut); // OK

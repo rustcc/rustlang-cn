@@ -54,46 +54,42 @@ impl SimpleFuture for SocketRead<'_> {
 ///
 /// Concurrency is achieved via the fact that calls to `poll` each future
 /// may be interleaved, allowing each future to advance itself at its own pace.
-struct Join2 {
+pub struct Join<FutureA, FutureB> {
     // Each field may contain a future that should be run to completion.
     // If the future has already completed, the field is set to `None`.
+    // This prevents us from polling a future after it has completed, which
+    // would violate the contract of the `Future` trait.
     a: Option<FutureA>,
     b: Option<FutureB>,
 }
 
-impl SimpleFuture for Join2 {
+impl<FutureA, FutureB> SimpleFuture for Join<FutureA, FutureB>
+where
+    FutureA: SimpleFuture<Output = ()>,
+    FutureB: SimpleFuture<Output = ()>,
+{
     type Output = ();
     fn poll(&mut self, wake: fn()) -> Poll<Self::Output> {
         // Attempt to complete future `a`.
-        let finished_a = match &mut self.a {
-            Some(a) => {
-                match a.poll(wake) {
-                    Poll::Ready(()) => true,
-                    Poll::Pending => false,
-                }
+        if let Some(a) = &mut self.a {
+            if let Poll::Ready(()) = a.poll(wake) {
+                self.a.take();
             }
-            None => true,
-        };
-        if finished_a { self.a.take() }
+        }
 
         // Attempt to complete future `b`.
-        let finished_b = match &mut self.b {
-            Some(b) => {
-                match b.poll(wake) {
-                    Poll::Ready(()) => true,
-                    Poll::Pending => false,
-                }
+        if let Some(b) = &mut self.b {
+            if let Poll::Ready(()) = b.poll(wake) {
+                self.b.take();
             }
-            None => true,
-        };
-        if finished_b { self.b.take() }
+        }
 
-        if finished_a && finished_b {
+        if self.a.is_none() && self.b.is_none() {
             // Both futures have completed-- we can return successfully
             Poll::Ready(())
         } else {
-            // One or both futures still have work to do, and will call
-            // `wake()` when progress can be made.
+            // One or both futures returned `Poll::Pending` and still have
+            // work to do. They will call `wake()` when progress can be made.
             Poll::Pending
         }
     }
@@ -109,12 +105,16 @@ impl SimpleFuture for Join2 {
 // the first and second futures are available at creation-time. The real
 // `AndThen` combinator allows creating the second future based on the output
 // of the first future, like `get_breakfast.and_then(|food| eat(food))`.
-enum AndThenFut {
+pub struct AndThenFut<FutureA, FutureB> {
     first: Option<FutureA>,
     second: FutureB,
 }
 
-impl SimpleFuture for AndThenFut {
+impl<FutureA, FutureB> SimpleFuture for AndThenFut<FutureA, FutureB>
+where
+    FutureA: SimpleFuture<Output = ()>,
+    FutureB: SimpleFuture<Output = ()>,
+{
     type Output = ();
     fn poll(&mut self, wake: fn()) -> Poll<Self::Output> {
         if let Some(first) = &mut self.first {
@@ -124,10 +124,10 @@ impl SimpleFuture for AndThenFut {
                 Poll::Ready(()) => self.first.take(),
                 // We couldn't yet complete the first future.
                 Poll::Pending => return Poll::Pending,
-            }
+            };
         }
         // Now that the first future is done, attempt to complete the second.
-        second.poll(wake)
+        self.second.poll(wake)
     }
 }
 ```
@@ -138,13 +138,14 @@ impl SimpleFuture for AndThenFut {
 trait Future {
     type Output;
     fn poll(
-        // note the change from `&mut self` to `Pin<&mut Self>`
+        // Note the change from `&mut self` to `Pin<&mut Self>`:
         self: Pin<&mut Self>,
-        lw: &LocalWaker, // note the change from `wake: fn()`
+        // and the change from `wake: fn()` to `cx: &mut Context<'_>`:
+        cx: &mut Context<'_>,
     ) -> Poll<Self::Output>;
 }
 ```
 
 您将注意到的第一个更改是我们的`self`类型不再`&mut self`，但已更改为`Pin<&mut Self>`。我们将在后面的章节中详细讨论`pinning`，但现在知道它允许我们创建不可移动的`Future`。不可移动的对象可以在它们的字段之间存储指针，例如`struct MyFut { a: i32, ptr_to_a: *const i32 }`。此功能是启用`async / await`所必需的。
 
-其次，`wake: fn()`已改为`LocalWaker`。在`SimpleFuture`，我们使用对函数指针(`fn()`)的调用来告诉`Future`的执行者应该轮询相关的`Future`。但是，由于`fn()`它是零大小的，因此无法存储有关哪个`task`是唤醒了的数据。在实际场景中，像Web服务器这样的复杂应用程序可能有数千个不同的连接，其唤醒应该分别进行管理。这就是`LocalWaker`和它的兄弟类型`Waker` 。
+其次，`wake: fn()`已改为`&mut Context<'_>`。在`SimpleFuture`，我们使用对函数指针(`fn()`)的调用来告诉`Future`的执行者应该轮询相关的`Future`。但是，由于`fn()`它是零大小的，因此无法存储有关哪个`task`是唤醒了的数据。在实际场景中，像Web服务器这样的复杂应用程序可能有数千个不同的连接，其唤醒应该分别进行管理。`Context` 通过控制 `Waker` 来唤醒特定的`task`。

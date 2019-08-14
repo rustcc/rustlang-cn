@@ -1,6 +1,6 @@
-# `async`/`await!` 入门
+# `async`/`.await` 入门
 
-`async/await!` 是 Rust 语言用于编写像同步代码一样的异步函数的内置工具。`async` 将一个代码块转化为一个实现了名为`Future`的特质（trait）的状态机。虽然在同步方法中调用阻塞函数会阻塞整个线程，但阻塞的`Futures`将让出线程控制权，允许其他`Futures`运行。
+`async/.await` 是 Rust 语言用于编写像同步代码一样的异步函数的内置工具。`async` 将一个代码块转化为一个实现了名为`Future`的特质（trait）的状态机。虽然在同步方法中调用阻塞函数会阻塞整个线程，但阻塞的`Futures`将让出线程控制权，允许其他`Futures`运行。
 
 要创建异步函数，可以使用`async fn`语法：
 
@@ -11,9 +11,8 @@ async fn do_something() { ... }
 `async fn`返回的值是一个`Future`，需要在执行者上运行才能起作用：
 
 ```rust
-// `block_on` blocks the current thread until the provided future has run to
-// completion. Other executors provide more complex behavior, like scheudling
-// multiple futures onto the same thread.
+// `block_on` 阻塞在当前线程直到 future 被执行完毕
+// 其他执行者（executors）在一个线程上调度多个 futures 
 use futures::executor::block_on;
 
 async fn hello_world() {
@@ -52,8 +51,8 @@ fn main() {
 async fn learn_and_sing() {
     // 在唱歌之前等待学歌完成
     // 这里我们使用 `await!` 而不是 `block_on` 来防止阻塞线程，这样就可以同时执行 `dance` 了。
-    let song = await!(learn_song());
-    await!(sing_song(song));
+    let song = learn_song().await;
+	sing_song(song).await;
 }
  async fn async_main() {
     let f1 = learn_and_sing();
