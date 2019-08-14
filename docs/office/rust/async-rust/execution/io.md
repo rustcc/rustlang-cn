@@ -3,14 +3,14 @@
 在上一节关于`The Future Trait`的部分中，我们讨论了在套接字上执行异步读取`Future`的示例：
 
 ```rust
-struct SocketRead<'a> {
+pub struct SocketRead<'a> {
     socket: &'a Socket,
 }
 
 impl SimpleFuture for SocketRead<'_> {
     type Output = Vec<u8>;
 
-    fn poll(self: Pin<&mut Self>, lw: &LocalWaker) -> Poll<Self::Output> {
+    fn poll(&mut self, wake: fn()) -> Poll<Self::Output> {
         if self.socket.has_data_to_read() {
             // The socket has data-- read it into a buffer and return it.
             Poll::Ready(self.socket.read_buf())
@@ -21,7 +21,7 @@ impl SimpleFuture for SocketRead<'_> {
             // When data becomes available, `wake` will be called, and the
             // user of this `Future` will know to call `poll` again and
             // receive data.
-            self.socket.set_readable_callback(lw);
+            self.socket.set_readable_callback(wake);
             Poll::Pending
         }
     }
@@ -86,7 +86,7 @@ println!("Socket {:?} is now {:?}", event.id, event.signals);
 
 ```rust
 impl Socket {
-    fn set_readable_callback(&self, lw: &LocalWaker) {
+    fn set_readable_callback(&self, waker: Waker) {
         // `local_executor` is a reference to the local executor.
         // this could be provided at creation of the socket, but in practice
         // many executor implementations pass it down through thread local
@@ -98,7 +98,7 @@ impl Socket {
 
         // Store the local waker in the executor's map so that it can be called
         // once the IO event arrives.
-        local_executor.event_map.insert(id, lw.clone());
+        local_executor.event_map.insert(id, waker);
         local_executor.add_io_event_interest(
             &self.socket_file_descriptor,
             Event { id, signals: READABLE },
@@ -107,4 +107,4 @@ impl Socket {
 }
 ```
 
-我们现在可以只有一个执行者线程，它可以接收和发送任何IO事件到适当的`LocalWaker`，这将唤醒相应的任务，允许执行者在返回检查更多IO事件之前驱动更多任务完成（并且继续循环...）。
+我们现在可以只有一个执行者线程，它可以接收和发送任何IO事件到适当的`Waker`，这将唤醒相应的任务，允许执行者在返回检查更多IO事件之前驱动更多任务完成（并且继续循环...）。
