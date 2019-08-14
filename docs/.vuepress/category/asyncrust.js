@@ -6,7 +6,8 @@ exports.asyncrust = (title) => {
             collapsable: true,
             children: [
             'getting_started/chapter',
-            'getting_started/why_async',
+			'getting_started/why_async',
+			'getting_started/the_state_of_asynchronous_rust',
             'getting_started/async_await_primer',
             'getting_started/http_server_example'
             ]
