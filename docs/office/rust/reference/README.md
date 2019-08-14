@@ -1,4 +1,4 @@
-# Rust语言规范
+# Rust 语言参考
 
 > **本书同步于官方 [The Rust Reference](https://doc.rust-lang.org/reference/index.html) 仓库[地址](https://github.com/rust-lang-nursery/reference/),欢迎参与！**
 
