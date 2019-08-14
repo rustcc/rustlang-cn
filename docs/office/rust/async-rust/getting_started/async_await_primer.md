@@ -11,9 +11,8 @@ async fn do_something() { ... }
 `async fn`返回的值是一个`Future`，需要在执行者上运行才能起作用：
 
 ```rust
-// `block_on` blocks the current thread until the provided future has run to
-// completion. Other executors provide more complex behavior, like scheudling
-// multiple futures onto the same thread.
+// `block_on` 阻塞在当前线程直到 future 被执行完毕
+// 其他执行者（executors）在一个线程上调度多个 futures 
 use futures::executor::block_on;
 
 async fn hello_world() {
@@ -52,8 +51,8 @@ fn main() {
 async fn learn_and_sing() {
     // 在唱歌之前等待学歌完成
     // 这里我们使用 `await!` 而不是 `block_on` 来防止阻塞线程，这样就可以同时执行 `dance` 了。
-    let song = await!(learn_song());
-    await!(sing_song(song));
+    let song = learn_song().await;
+	sing_song(song).await;
 }
  async fn async_main() {
     let f1 = learn_and_sing();
