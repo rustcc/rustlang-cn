@@ -80,7 +80,7 @@ module.exports = {
           { text: '网络', link: '/www/resource.html' },
           { text: '微博', link: 'https://weibo.com/kriry?is_all=1' },
           { text: '论坛', link: 'http://kriry.com/a/community/rust' },
-          { text: '聊天室', link: 'https://riot.im/app/#/room/#rustlang-cn:matrix.org' },
+          { text: 'RSS源', link: 'https://riot.im/app/#/room/#rustlang-cn:matrix.org' },
           { text: '知乎', link: 'https://zhuanlan.zhihu.com/rustlang-cn' }
           
         ],
