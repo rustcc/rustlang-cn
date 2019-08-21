@@ -10,6 +10,7 @@
 ## 异步运行时
 
 * [Runtime](https://github.com/rustasync/runtime) - 拥抱每个人都能够构建异步软件
+* [async-std](https://github.com/async-rs/async-std) - Rust标准库的异步版本
 * [Tokio](https://github.com/tokio-rs/tokio) - [Awesome-Tokio](/www/tokio)
 * [Actix](https://github.com/actix/actix) - [Awesome-Actix](/www/actix)
 
@@ -17,6 +18,7 @@
 
 * [onyxiafs](https://github.com/divinerapier/onyxiafs) - OnyxiaFS 是一个基于 Facebook Inc. 在 2010 发表的论文 开发的一个分布式对象文件系统。
 * [rpcx-rs](https://github.com/smallnest/rpcx-rs) - Rust library for rpcx rpc/microservice framework.
+* [capnp-rpc](https://github.com/capnproto/capnproto-rust/tree/master/capnp-rpc) - 对象能力远程过程调用系统
 
 ## HTTP
 
