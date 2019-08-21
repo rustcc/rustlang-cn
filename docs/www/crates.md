@@ -5,16 +5,16 @@
 - [操作系统](#操作系统)
 - [数据库](#数据库)
   - [数据库驱动](#数据库驱动)
+- [Server](https://rustlang-cn.org/www/server.html)
+- [wasm](https://rustlang-cn.org/www/wasm.html)
+- [IOT](https://rustlang-cn.org/www/iot.html)
+- [GUI](#gui)
+  - [Web](https://rustlang-cn.org/www/wasm.html)
+  - [Native](#native)
 - [数据结构](#数据结构)
 - [文本](#文本)
 - [文件格式](#文件格式)
 - [容器](#容器)
-- [GUI](#gui)
-  - [Web](https://rustlang-cn.org/www/wasm.html)
-  - [Native](#native)
-- [Server](#server)
-- [wasm](#server)
-- [IOT](#iot)
 - [科学计算](#科学计算)
 
 ## 操作系统
@@ -49,24 +49,6 @@
 ## 容器
 
 * [hunit](https://github.com/kulasama/kunit) - Rust implementation of the Open Containers
-
-## GUI
-
-### [Web](https://rustlang-cn.org/www/wasm.html)
-
-### Native
-  
-## Server
-
- > 前往[Awesome-Server](https://rustlang-cn.org/www/server.html)
-
-## Wasm
-
- > 前往[Awesome-Wasm](https://rustlang-cn.org/www/wasm.html)
- 
- ## IOT
-
- > 前往[Awesome-IOT](https://rustlang-cn.org/www/iot.html)
 
 ## 科学计算
 
