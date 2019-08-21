@@ -10,7 +10,7 @@
 - [文件格式](#文件格式)
 - [容器](#容器)
 - [GUI](#gui)
-  - [Web](#web)
+  - [Web](https://rustlang-cn.org/www/wasm.html)
   - [Native](#native)
 - [Server](#server)
 - [wasm](#server)
@@ -20,6 +20,12 @@
 ## 操作系统
 
 * [heim](https://github.com/heim-rs/heim) - 用于系统信息获取的跨平台异步库
+
+## 数据库
+
+### 数据库驱动
+
+* [wither](https://github.com/thedodd/wither) - MongoDB的ODM基于mongo rust driver
 
 ## 数据结构
 
@@ -40,21 +46,13 @@
 
 * [tomlenv](https://github.com/rustyhorde/tomlenv)  Manage your environment configuration with TOML
 
-## 数据库
-
-### 数据库驱动
-
-* [wither](https://github.com/thedodd/wither) - MongoDB的ODM基于mongo rust driver
-
 ## 容器
 
 * [hunit](https://github.com/kulasama/kunit) - Rust implementation of the Open Containers
 
 ## GUI
 
-### Web
-
-> 前往[Awesome-Wasm](https://rustlang-cn.org/www/wasm.html)
+### [Web](https://rustlang-cn.org/www/wasm.html)
 
 ### Native
   
