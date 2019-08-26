@@ -121,7 +121,8 @@ exports.book_exp = (title) => {
             collapsable: true,
             children: [
             '14 More about Cargo and Crates.io/01 Customizing Builds with Release Profiles',
-            '14 More about Cargo and Crates.io/02 Publishing a Crate to Crates.io'
+            '14 More about Cargo and Crates.io/02 Publishing a Crate to Crates.io',
+            '14 More about Cargo and Crates.io/03 Cargo Workspaces'
             ]
         }
     ]
