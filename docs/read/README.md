@@ -5,7 +5,7 @@
 
 <div id="read">
 
-<div id="read-join" style="font-size: 1.5rem;">欢迎 <a href="https://github.com/rustlang-cn/rustlang-cn#%E4%B8%80%E5%8F%82%E4%B8%8E-rust-%E4%B8%AD%E6%96%87%E9%98%85%E8%AF%BB%E6%8A%95%E7%A8%BF" target="_black">投稿</a> 共建Rust语言中文网络！</div>
+<div id="read-join" style="font-size: 1.5rem;">欢迎 <a href="https://github.com/rustlang-cn/rustlang-cn#%E4%BA%8C-rust%E4%B8%AD%E6%96%87%E8%90%A5%E5%85%BB%E8%AE%A1%E5%88%92" target="_black">投稿</a> 共建Rust语言中文网络！</div>
 
 <h4><span id="date"> 2019-07</span><a href="/read/07/practical-rust-web-development-front-end.html">Rust Web开发实战-前端</a></h4>
 
