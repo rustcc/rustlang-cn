@@ -5,6 +5,7 @@
 ## 一: Rust中文网络点：
 
 - [Rust中文](https://rustlang-cn.org)
+- [Rust中文阅读](https://rustlang-cn.org/read/)
 - **微信公众号：Rust中文**
 - [Rust中文微博](https://weibo.com/kriry?is_all=1)
 - [Rust中文论坛](http://kriry.com/a/community/rust)
