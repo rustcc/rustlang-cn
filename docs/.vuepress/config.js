@@ -49,6 +49,7 @@ module.exports = {
         },
         searchMaxSuggestions: 11,
         nav: [
+          { text: '阅读', link: '/read/' },
           { text: '官方', items: [
               { text: '官方Rust书录', link: '/office/rust/' },
               { text: 'Rustlang', items: [
