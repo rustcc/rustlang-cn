@@ -13,7 +13,7 @@ Release版本：
 
 ```ini
 [dependencies]
-actix-web = "0.7"
+actix-web = "1.0"
 ```
 
 Development 版本：
