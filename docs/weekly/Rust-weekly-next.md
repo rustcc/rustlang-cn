@@ -12,9 +12,18 @@
 
 ## 新闻
 
+- [This Week in Rust 301](https://this-week-in-rust.org/blog/2019/08/27/this-week-in-rust-301/)
+- [Wgpu v0.3 is released](https://users.rust-lang.org/t/wgpu-v0-3-is-released/31682/1)
+- [Announcing Rustbuddy 1.0](https://users.rust-lang.org/t/announcing-rustbuddy-1-0-a-coding-assistant/31510)
+- 
+
 ## 文章
 
+- [A JavaScript Developer’s View of Rust](https://medium.com/swlh/a-javascript-developers-view-of-rust-e702c11262c6)
+
 ## Crates
+
+- [riker](https://github.com/riker-rs/riker) - Easily build efficient, highly concurrent and resilient applications. An Actor Framework for Rust
 
 ## 视频
 
