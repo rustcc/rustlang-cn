@@ -15,15 +15,20 @@
 - [This Week in Rust 301](https://this-week-in-rust.org/blog/2019/08/27/this-week-in-rust-301/)
 - [Wgpu v0.3 is released](https://users.rust-lang.org/t/wgpu-v0-3-is-released/31682/1)
 - [Announcing Rustbuddy 1.0](https://users.rust-lang.org/t/announcing-rustbuddy-1-0-a-coding-assistant/31510)
-- 
+- [Facebook的HHVM开始使用Rust重写](https://www.linuxidc.com/Linux/2019-08/160417.htm)
 
 ## 文章
 
 - [A JavaScript Developer’s View of Rust](https://medium.com/swlh/a-javascript-developers-view-of-rust-e702c11262c6)
+- [My Rust Journey Part 2 — Interaction with a Database](https://medium.com/@daniel_markow/my-rust-journey-part-2-interaction-with-a-database-24fb53c9f27c)
+- [Install Low Power Apache Mynewt and Embedded Rust for Visual Studio Code on Windows](https://medium.com/@ly.lee/install-low-power-apache-mynewt-and-embedded-rust-for-visual-studio-code-on-windows-f889e19c3405)
+- [Low Power NB-IoT on STM32 Blue Pill with Apache Mynewt and Embedded Rust](https://medium.com/@ly.lee/low-power-nb-iot-on-stm32-blue-pill-with-apache-mynewt-and-embedded-rust-cef5a3ecdd90)
 
 ## Crates
 
+- [actix-raft](https://github.com/railgun-rs/actix-raft) - An implementation of the Raft consensus protocol using the actix Actor framework
 - [riker](https://github.com/riker-rs/riker) - Easily build efficient, highly concurrent and resilient applications. An Actor Framework for Rust
+- [lumen](https://github.com/lumen/lumen) - An alternative BEAM implementation, designed for WebAssembly
 
 ## 视频
 
