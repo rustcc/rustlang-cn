@@ -17,6 +17,7 @@
 - [Announcing Rustbuddy 1.0](https://users.rust-lang.org/t/announcing-rustbuddy-1-0-a-coding-assistant/31510)
 - [Facebook的HHVM开始使用Rust重写](https://www.linuxidc.com/Linux/2019-08/160417.htm)
 - [This Month in Rust GameDev #1 - August 2019](https://rust-gamedev.github.io/2019/09/02/newsletter-001.html)
+- [Announcing Arboric GraphQL API Gateway](https://medium.com/@alistairisrael/announcing-arboric-graphql-api-gateway-f2eb9e3a96a8)
 
 ## 文章
 
@@ -34,6 +35,7 @@
 - [actix-raft](https://github.com/railgun-rs/actix-raft) - An implementation of the Raft consensus protocol using the actix Actor framework
 - [riker](https://github.com/riker-rs/riker) - Easily build efficient, highly concurrent and resilient applications. An Actor Framework for Rust
 - [lumen](https://github.com/lumen/lumen) - An alternative BEAM implementation, designed for WebAssembly
+- [arboric](https://github.com/arboric/arboric) - Arboric – the GraphQL API Gateway
 
 ## 视频
 
