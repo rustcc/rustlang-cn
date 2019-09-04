@@ -6,8 +6,8 @@
   - [新闻](#%e6%96%b0%e9%97%bb)
   - [文章](#%e6%96%87%e7%ab%a0)
   - [Crates](#crates)
-  - [视频](#%e8%a7%86%e9%a2%91)
-  - [rustlang-cn](#rustlang-cn)
+  - [Rust中文](#rust中文)
+  - [教程](#教程)
   - [One More Thing](#one-more-thing)
 
 ## 新闻
@@ -17,6 +17,8 @@
 - [Announcing Rustbuddy 1.0](https://users.rust-lang.org/t/announcing-rustbuddy-1-0-a-coding-assistant/31510)
 - [Facebook的HHVM开始使用Rust重写](https://www.linuxidc.com/Linux/2019-08/160417.htm)
 - [This Month in Rust GameDev #1 - August 2019](https://rust-gamedev.github.io/2019/09/02/newsletter-001.html)
+- [Announcing Arboric GraphQL API Gateway](https://medium.com/@alistairisrael/announcing-arboric-graphql-api-gateway-f2eb9e3a96a8)
+- [用Rust开发Linux驱动？内核维护者表示愿意接受](https://www.ithome.com/0/442/848.htm)
 
 ## 文章
 
@@ -28,15 +30,22 @@
 - [介绍Rust(2): 基本数字类型](https://juejin.im/post/5d69f6b46fb9a06af7124b2e)
 - [WebAssembly Modules in Rust: An Introduction](https://medium.com/@rossbulat/webassembly-modules-an-introduction-5554b8982402)
 - [How to configure a new testnet for your substrate chain](https://medium.com/@vimukthi.com/how-to-configure-a-new-testnet-for-substrate-chain-2cfdce951b9f)
+- [用欧拉计划学Rust语言（第17~21题）](http://www.mamicode.com/info-detail-2766630.html)
+- [用欧拉计划学Rust编程（第26题）](https://www.cnblogs.com/speeding/p/11451147.html)
+- [Rust 是系统编程的未来，C 是新的 Assembly](https://www.infoq.cn/article/O3zxX7FmL7hiTi6J7RF9)
 
 ## Crates
 
 - [actix-raft](https://github.com/railgun-rs/actix-raft) - An implementation of the Raft consensus protocol using the actix Actor framework
 - [riker](https://github.com/riker-rs/riker) - Easily build efficient, highly concurrent and resilient applications. An Actor Framework for Rust
 - [lumen](https://github.com/lumen/lumen) - An alternative BEAM implementation, designed for WebAssembly
+- [arboric](https://github.com/arboric/arboric) - Arboric – the GraphQL API Gateway
 
-## 视频
+## Rust中文
 
-## rustlang-cn
+## 教程
+
+- [零基础学新时代编程语言Rust](https://edu.51cto.com/course/19232.html)
+- [rust编程入门](https://space.bilibili.com/382863456/channel/detail?cid=86206)
 
 ## One More Thing
