@@ -43,6 +43,8 @@
 
 ## Rust中文
 
+- [This Week in Rust中文(2019 8-25 - 9-1)](https://github.com/rustlang-cn/rustlang-cn/issues/118)
+
 ## 教程
 
 - [零基础学新时代编程语言Rust](https://edu.51cto.com/course/19232.html)
