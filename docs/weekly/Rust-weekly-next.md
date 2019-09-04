@@ -6,7 +6,7 @@
   - [新闻](#%e6%96%b0%e9%97%bb)
   - [文章](#%e6%96%87%e7%ab%a0)
   - [Crates](#crates)
-  - [视频](#%e8%a7%86%e9%a2%91)
+  - [教程](#教程)
   - [rustlang-cn](#rustlang-cn)
   - [One More Thing](#one-more-thing)
 
@@ -37,7 +37,7 @@
 - [lumen](https://github.com/lumen/lumen) - An alternative BEAM implementation, designed for WebAssembly
 - [arboric](https://github.com/arboric/arboric) - Arboric – the GraphQL API Gateway
 
-## 视频
+## 教程
 
 ## rustlang-cn
 
