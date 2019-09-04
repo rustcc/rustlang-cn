@@ -7,7 +7,7 @@
   - [文章](#%e6%96%87%e7%ab%a0)
   - [Crates](#crates)
   - [Rust中文](#rust中文)
-   - [资源](#资源)
+  - [教程](#教程)
   - [One More Thing](#one-more-thing)
 
 ## 新闻
@@ -39,6 +39,8 @@
 
 ## Rust中文
 
-## 资源
+## 教程
+
+- [零基础学新时代编程语言Rust](https://edu.51cto.com/course/19232.html)
 
 ## One More Thing
