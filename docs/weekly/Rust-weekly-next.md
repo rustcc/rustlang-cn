@@ -49,3 +49,15 @@
 - [rust编程入门](https://space.bilibili.com/382863456/channel/detail?cid=86206)
 
 ## One More Thing
+
+- [2019年9月前端开发者实用干货大合集](https://www.uisdc.com/designers-and-developers-august-2019?utm_source=tuicool&utm_medium=referral)
+- [A complete guide to Oauth2 protocol](https://milapneupane.com.np/2019/09/02/a-complete-guide-to-oauth2-protocol/)
+- [Inko Progress Report: August 2019](https://inko-lang.org/news/inko-progress-report-august-2019/)
+- [Hardware Intrinsics in .NET Core](https://devblogs.microsoft.com/dotnet/hardware-intrinsics-in-net-core/)
+- [WebAssembly Interface Types: Interoperate with All the Things!](https://hacks.mozilla.org/2019/08/webassembly-interface-types/)
+- [Go 1.13 Release Notes](https://golang.org/doc/go1.13)
+- [2019深度学习语音合成指南](https://mp.weixin.qq.com/s?__biz=MzI5NTIxNTg0OA==&mid=2247497281&idx=2&sn=b98dfcaa2c404829a8286d4b14ea521a&utm_source=tuicool&utm_medium=referral)
+- [什么是熵？AI必读：从宇宙大爆炸到AI算法再到世界观](https://mp.weixin.qq.com/s?__biz=MzA3MDgyMjMwMA==&mid=2649936346&idx=1&sn=5790edcb38c331b67255edaea63b418d&utm_source=tuicool&utm_medium=referral)
+- [20分钟看懂大数据分布式计算](http://www.uml.org.cn/yunjisuan/201908192.asp?utm_source=tuicool&utm_medium=referral)
+- [深入理解图片和框架的原生懒加载功能](https://mp.weixin.qq.com/s?__biz=Mzg2NDAzMjE5NQ==&mid=2247484612&idx=1&sn=75c37441170a63cdb08d5167e0df0295&utm_source=tuicool&utm_medium=referral)
+- [开发效率创新高，只因收下了这波 CSS 操作](https://juejin.im/post/5d6a740fe51d45621512adb3?utm_source=tuicool&utm_medium=referral)
