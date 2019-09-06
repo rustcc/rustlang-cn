@@ -8,7 +8,7 @@
   - [Crates](#crates)
   - [Rust中文](#rust中文)
   - [教程](#教程)
-  - [One More Thing](#one-more-thing)
+  - [动态](#动态)
 
 ## 新闻
 
@@ -26,5 +26,13 @@
 
 ## 教程
 
-## One More Thing
+## 动态
+
+- Actix
+  - [Actix web v1.0.7](https://github.com/actix/actix-web/releases/tag/web-v1.0.7)
+  - [Actix connect v0.2.5](https://github.com/actix/actix-net/releases/tag/connect-v0.2.5)
+  - [Actix Runtime 0.2.5](https://github.com/actix/actix-net/releases/tag/rt-0.2.5)
+
+- wasm-bindgen
+  - [Default all async support to `std::future` #1741](https://github.com/rustwasm/wasm-bindgen/pull/1741)
 
