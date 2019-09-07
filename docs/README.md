@@ -40,7 +40,7 @@ footer: MIT Licensed | Copyright © 2019-present | Rust中文
   </div>
   <div class="feature">
     <button class="topic"><a href="https://riot.im/app/#/room/#rustlang-cn:matrix.org" target="_black">Rust-RSS源</a></button>
-    <p><a href="https://riot.im/app/#/room/#rustlang-cn:matrix.org" target="_black"><strong>Rust-RSS源:实时推送Rust全方位信息资源</strong></a></p>
+    <p><a href="https://riot.im/app/#/room/#rustlang-cn:matrix.org" target="_black"><strong>实时推送Rust全方位信息资源</strong></a></p>
   </div>
   <div class="feature">
     <button class="topic"><a href="https://github.com/rustlang-cn" target="_black">Rust中文Github</a></button>
