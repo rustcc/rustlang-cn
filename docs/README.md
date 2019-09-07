@@ -9,7 +9,7 @@ footer: MIT Licensed | Copyright © 2019-present | Rust中文
 
 <div style="margin-top: 5rem;"></div>
 
-<div id="news"><a href="https://github.com/rustlang-cn/rustlang-cn" target="_black">欢迎参与 </a>Rust中文共建Rust语言中文生态网络</div><hr>
+<div id="news"><a href="https://github.com/rustlang-cn/rustlang-cn/issues/124" target="_black">欢迎参与 </a>Rust中文共建Rust语言中文生态网络</div><hr>
 
 <div id="news"><strong>QQ群</strong> 2群：258124913 &nbsp; 1群：570065685</div>
 
