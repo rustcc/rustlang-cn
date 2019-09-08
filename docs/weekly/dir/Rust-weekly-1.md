@@ -1,6 +1,6 @@
 # Rust-weekly-1
 
-> 🎉🎉欢迎参与Rust-weekly [参与入口](https://github.com/rustlang-cn/rustlang-cn/weekly/Rust-weekly-next.md), 本文同步于[Rust-weekly-1](https://rustlang-cn.org/weekly/dir/Rust-weekly-1.html)
+> 🎉🎉欢迎参与Rust-weekly [参与入口](https://github.com/rustlang-cn/rustlang-cn/blob/master/docs/weekly/Rust-weekly-next.md), 本文同步于[Rust-weekly-1](https://rustlang-cn.org/weekly/dir/Rust-weekly-1.html)
 
 - [Rust-weekly-1](#rust-weekly-1)
   - [新闻](#%e6%96%b0%e9%97%bb)

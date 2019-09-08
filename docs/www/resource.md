@@ -51,8 +51,10 @@
 
 ## 视频
 
-* [Rust基础教程](https://nodelover.me/course/rust-basic)
-* [Rust 教程 | 中文字幕 - 系列视频](https://space.bilibili.com/331415319?spm_id_from=333.788.b_765f7570696e666f.2)
+- [零基础学新时代编程语言Rust](https://edu.51cto.com/course/19232.html)
+- [rust编程入门](https://space.bilibili.com/382863456/channel/detail?cid=86206)
+- [Rust基础教程](https://nodelover.me/course/rust-basic)
+- [Rust 教程 | 中文字幕 - 系列视频](https://space.bilibili.com/331415319?spm_id_from=333.788.b_765f7570696e666f.2)
 
 ## 博客
 
