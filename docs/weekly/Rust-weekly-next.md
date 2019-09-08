@@ -18,6 +18,8 @@
 ## 文章
 
 - [Rust 与 LLVM简单介绍](https://juejin.im/post/5d6f2f2e6fb9a06b244339d4)
+- [Rust每周一库: LRU](https://colobu.com/2019/09/06/rust-lib-per-week-lru-rs/?utm_source=tuicool&utm_medium=referral)
+- [Rust每周一库: lazy_static](https://colobu.com/2019/09/08/rust-lib-per-week-lazy-static/?utm_source=tuicool&utm_medium=referral)
 - [Turning Existing WebAssembly Applications Into Distributed Programs](https://medium.com/perlin-network/turning-existing-webassembly-applications-into-distributed-programs-33b817462aa6?source=rss------rust-5)
 - [Learning Rust by Hacking Asteroids](https://medium.com/@JoeKreydt/learning-rust-by-hacking-asteroids-a4b14cdf812a?source=rss------rust-5)
 
