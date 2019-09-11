@@ -270,6 +270,22 @@ rand = "0.3.14"
 
 [semver]: http://semver.org
 
+对于在国内的人来说，Rust开发时有时使用官方的源太慢，可以考虑更换使用国内中科大的源。更换方法如下：
+在 *$HOME/.cargo/config* 中添加如下内容（如果文件不存在请直接新建该文件）：
+
+```text
+[source.crates-io]
+registry = "https://mirrors.ustc.edu.cn/crates.io-index"
+replace-with = 'ustc'
+
+[source.ustc]
+registry = "git://mirrors.ustc.edu.cn/crates.io-index"
+```
+如果所处的环境中不允许使用 git 协议，可以把上述地址改为：
+
+```text
+registry = "https://mirrors.ustc.edu.cn/crates.io-index"
+```
 现在，不修改任何代码，构建项目，如示例 2-2 所示：
 
 ```text
