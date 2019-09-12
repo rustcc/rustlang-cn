@@ -6,3 +6,4 @@
 
 * [Rust-weekly-1](/weekly/dir/Rust-weekly-1.html)
 * [Rust-weekly-2](/weekly/dir/Rust-weekly-2.html)
+* [Rust-weekly-3](/weekly/dir/Rust-weekly-3.html)
