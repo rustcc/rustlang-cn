@@ -2,7 +2,7 @@
 
 > 🎉🎉欢迎参与Rust-weekly [参与入口](https://github.com/rustlang-cn/rustlang-cn/blob/master/docs/weekly/Rust-weekly-next.md), 本文同步于[Rust-weekly-2](https://rustlang-cn.org/weekly/dir/Rust-weekly-2.html)
 
-- [Rust-weekly-next](#rust-weekly-2)
+- [Rust-weekly-2](#rust-weekly-2)
   - [新闻](#%e6%96%b0%e9%97%bb)
   - [文章](#%e6%96%87%e7%ab%a0)
   - [Crates](#crates)
