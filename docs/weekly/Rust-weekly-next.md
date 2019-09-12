@@ -57,9 +57,14 @@
   - [Actix web v1.0.7](https://github.com/actix/actix-web/releases/tag/web-v1.0.7)
   - [Actix connect v0.2.5](https://github.com/actix/actix-net/releases/tag/connect-v0.2.5)
   - [Actix Runtime 0.2.5](https://github.com/actix/actix-net/releases/tag/rt-0.2.5)
+  - [Actix http v0.2.10](https://github.com/actix/actix-web/releases/tag/http-v0.2.10)
+  - [Actix http client v0.2.5](https://github.com/actix/actix-web/releases/tag/awc-v0.2.5)
 
 - wasm-bindgen
   - [Default all async support to `std::future` #1741](https://github.com/rustwasm/wasm-bindgen/pull/1741)
 
 - quinn
-  - [We are happy to announce the release of 0.4.0 of Quinn, our pure-Rust implementation of the QUIC protocol, the next generation TCP replacement protocol currently being standardized at the IETF](https://github.com/djc/quinn/releases/tag/0.4.0)
+  - [We are happy to announce the release of 0.4.0 of Quinn, our pure-Rust implementation of the QUIC protocol](https://github.com/djc/quinn/releases/tag/0.4.0)
+
+- hyper
+  - [v0.13.0-alpha.1](https://github.com/hyperium/hyper/releases/tag/v0.13.0-alpha.1)
