@@ -1,3 +1,15 @@
+# Rust-weekly-3
+
+> 🎉🎉欢迎参与Rust-weekly [参与入口](https://github.com/rustlang-cn/rustlang-cn/blob/master/docs/weekly/Rust-weekly-next.md), 本文同步于[Rust-weekly-3](https://rustlang-cn.org/weekly/dir/Rust-weekly-3.html)
+
+- [Rust-weekly-3](#rust-weekly-3)
+  - [新闻](#%e6%96%b0%e9%97%bb)
+  - [文章](#%e6%96%87%e7%ab%a0)
+  - [Crates](#crates)
+  - [教程](#教程)
+  - [Rust中文](#rust中文)
+  - [动态](#动态)
+
 ## 新闻
 
 - [This Week in Rust 302](https://this-week-in-rust.org/blog/2019/09/03/this-week-in-rust-302/)
