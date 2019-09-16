@@ -10,12 +10,10 @@
 ## Rust中文
 
 - [Rust中文](https://rustlang-cn.org)
-- [Rust中文阅读](https://rustlang-cn.org/read/)
 - **微信公众号：Rust中文**
 - [Rust中文微博](https://weibo.com/kriry?is_all=1)
 - [Rust中文论坛](http://kriry.com/a/community/rust)
 - [Rust中文知乎](https://zhuanlan.zhihu.com/rustlang-cn)
-- [Rust中文聊天室](https://riot.im/app/#/room/#rustlang-cn:matrix.org)
 - [Rust中文Github](https://github.com/rustlang-cn)
 - **QQ-1群：570065685**
 - **QQ-2群：258124913**
@@ -23,7 +21,7 @@
 ## Awesome
 
 - [Awesome-Rust](https://github.com/rust-unofficial/awesome-rust/blob/master/README.md)
-- [Awesome-Rust中文](https://rustlang-cn.org/www/resource.html#rust%E4%B8%AD%E6%96%87)
+- [Awesome-Rust中文](/www/www.html#rust中文)
 - [Awesome-Crates](https://rustlang-cn.org/www/crates.html)
 - [Awesome-Wasm](https://rustlang-cn.org/www/wasm.html)
 - [Awesome-IOT](https://rustlang-cn.org/www/iot.html)

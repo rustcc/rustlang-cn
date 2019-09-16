@@ -28,26 +28,6 @@ footer: MIT Licensed | Copyright © 2019-present | Rust中文
     <button class="topic"><a href="https://zhuanlan.zhihu.com/rustlang-cn" target="_black">知乎专栏:Rust中文</a></button>
     <p><a href="https://zhuanlan.zhihu.com/rustlang-cn" target="_black"><strong>Rust中文优质文章</strong></a></p>
   </div>
-  <div class="feature">
-    <button class="topic"><a href="http://kriry.com/a/community/rust" target="_black">Rust中文论坛</a></button>
-    <p><a href="http://kriry.com/a/signup" target="_black"><strong>Rust中文网络探索互动</strong></a></p>
-  </div>
-   <div class="feature">
-    <button class="topic"><a href="https://rustlang-cn.org/read/" target="_black">Rust中文阅读</a></button>
-    <p><a href="https://rustlang-cn.org/read/" target="_black"><strong>Rust中文阅读文章</strong></a></p>
-  </div>
-   <div class="feature">
-    <button class="topic"><a href="https://rustlang-cn.org/weekly/" target="_black">Rust-weekly</a></button>
-    <p><a href="https://rustlang-cn.org/weekly/" target="_black"><strong>Rust-weekly信息</strong></a></p>
-  </div>
-  <div class="feature">
-    <button class="topic"><a href="https://riot.im/app/#/room/#rustlang-cn:matrix.org" target="_black">Rust-RSS源</a></button>
-    <p><a href="https://riot.im/app/#/room/#rustlang-cn:matrix.org" target="_black"><strong>实时推送Rust全方位信息资源</strong></a></p>
-  </div>
-  <div class="feature">
-    <button class="topic"><a href="https://github.com/rustlang-cn" target="_black">Rust中文Github</a></button>
-    <p><a href="https://github.com/rustlang-cn" target="_black"><strong>欢迎共建Rust中文</strong></a></p>
-  </div>
 </div>
 
 # Why Rust

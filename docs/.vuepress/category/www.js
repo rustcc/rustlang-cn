@@ -1,6 +1,6 @@
 exports.www = (title) => {
     return [
-        'resource',
+        'www',
         'crates',
         'wasm',
         'iot',

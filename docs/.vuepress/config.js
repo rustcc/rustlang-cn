@@ -49,7 +49,6 @@ module.exports = {
         },
         searchMaxSuggestions: 11,
         nav: [
-          { text: '阅读', link: '/read/' },
           { text: '官方', items: [
               { text: '官方Rust书录', link: '/office/rust/' },
               { text: 'Rustlang', items: [
@@ -78,11 +77,9 @@ module.exports = {
             { text: 'Rust中文用户书录', link: '/users/' },
             { text: 'The Book-学习心得', link: '/users/book-exp/' }
           ] },
-          { text: '网络', link: '/www/resource.html' },
-          { text: 'Weekly', link: '/weekly/' },
-          { text: '微博', link: 'https://weibo.com/kriry?is_all=1' },
+          { text: '网络', link: '/www/www.html' },
           { text: '论坛', link: 'http://kriry.com/a/community/rust' },
-          { text: 'RSS源', link: 'https://riot.im/app/#/room/#rustlang-cn:matrix.org' },
+          { text: '微博', link: 'https://weibo.com/kriry?is_all=1' },
           { text: '知乎', link: 'https://zhuanlan.zhihu.com/rustlang-cn' }
           
         ],
