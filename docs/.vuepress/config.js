@@ -78,7 +78,7 @@ module.exports = {
             { text: 'The Book-学习心得', link: '/users/book-exp/' }
           ] },
           { text: '网络', link: '/www/www.html' },
-          { text: '论坛', link: 'http://kriry.com/a/community/rust' },
+          { text: '论坛', link: 'https://github.com/rustlang-cn/forum/issues' },
           { text: '微博', link: 'https://weibo.com/kriry?is_all=1' },
           { text: '知乎', link: 'https://zhuanlan.zhihu.com/rustlang-cn' }
           
