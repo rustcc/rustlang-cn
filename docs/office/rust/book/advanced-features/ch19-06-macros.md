@@ -80,7 +80,7 @@ macro_rules! vec {
 
 现在让我们来看看这个出现在与此单边模式相关的代码块中的模式：在 `$()*` 部分中所生成的 `temp_vec.push()` 为在匹配到模式中的 `$()` 每一部分而生成。`$x` 由每个与之相匹配的表达式所替换。当以 `vec![1, 2, 3];` 调用该宏时，替换该宏调用所生成的代码会是下面这样：
 
-```rust,ignore
+```rust
 let mut temp_vec = Vec::new();
 temp_vec.push(1);
 temp_vec.push(2);
@@ -104,7 +104,7 @@ temp_vec
 
 <span class="filename">文件名: src/lib.rs</span>
 
-```rust,ignore
+```rust
 use proc_macro;
 
 #[some_attribute]
@@ -124,7 +124,7 @@ pub fn some_name(input: TokenStream) -> TokenStream {
 
 <span class="filename">文件名: src/main.rs</span>
 
-```rust,ignore
+```rust
 use hello_macro::HelloMacro;
 use hello_macro_derive::HelloMacro;
 
@@ -156,7 +156,7 @@ pub trait HelloMacro {
 
 现在有了一个包含函数的 trait 。此时，crate 用户可以实现该 trait 以达到其期望的功能，像这样：
 
-```rust,ignore
+```rust
 use hello_macro::HelloMacro;
 
 struct Pancakes;
@@ -213,7 +213,7 @@ https://github.com/rust-lang/rust/issues/55599
 > https://github.com/rust-lang/rust/pull/54658 <br />
 > https://github.com/rust-lang/rust/issues/55599
 
-```rust,ignore
+```rust
 extern crate proc_macro;
 
 use crate::proc_macro::TokenStream;
@@ -244,7 +244,7 @@ pub fn hello_macro_derive(input: TokenStream) -> TokenStream {
 
 该函数首先将来自 `TokenStream` 的 `input` 转换为一个我们可以解释和操作的数据结构。这正是 `syn` 派上用场的地方。`syn` 中的 `parse_derive_input` 函数获取一个 `TokenStream` 并返回一个表示解析出 Rust 代码的 `DeriveInput` 结构体。示例 19-40 展示了从字符串 `struct Pancakes;` 中解析出来的 `DeriveInput` 结构体的相关部分：
 
-```rust,ignore
+```rust
 DeriveInput {
     // --snip--
 
@@ -278,7 +278,7 @@ DeriveInput {
 
 <span class="filename">文件名: hello_macro_derive/src/lib.rs</span>
 
-```rust,ignore
+```rust
 fn impl_hello_macro(ast: &syn::DeriveInput) -> TokenStream {
     let name = &ast.ident;
     let gen = quote! {
@@ -322,14 +322,14 @@ hello_macro_derive = { path = "../hello_macro/hello_macro_derive" }
 
 类属性宏与自定义派生宏相似，不同于为 `derive` 属性生成代码，它们允许你创建新的属性。它们也更为灵活；`derive` 只能用于结构体和枚举；属性还可以用于其它的项，比如函数。作为一个使用类属性宏的例子，可以创建一个名为 `route` 的属性用于注解 web 应用程序框架（web application framework）的函数：
 
-```rust,ignore
+```rust
 #[route(GET, "/")]
 fn index() {
 ```
 
 `#[route]` 属性将由框架本身定义为一个过程宏。其宏定义的函数签名看起来像这样：
 
-```rust,ignore
+```rust
 #[proc_macro_attribute]
 pub fn route(attr: TokenStream, item: TokenStream) -> TokenStream {
 ```
@@ -342,13 +342,13 @@ pub fn route(attr: TokenStream, item: TokenStream) -> TokenStream {
 
 最后，类函数宏定义看起来像函数调用的宏。例如，`sql!` 宏可能像这样被调用：
 
-```rust,ignore
+```rust
 let sql = sql!(SELECT * FROM posts WHERE id=1);
 ```
 
 这个宏会解析其中的 SQL 语句并检查其是否是句法正确的。该宏应该被定义为如此：
 
-```rust,ignore
+```rust
 #[proc_macro]
 pub fn sql(input: TokenStream) -> TokenStream {
 ```
