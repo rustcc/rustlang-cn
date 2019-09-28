@@ -15,8 +15,6 @@
 - [Rust中文论坛](https://github.com/rustlang-cn/forum/issues)
 - [Rust中文知乎](https://zhuanlan.zhihu.com/rustlang-cn)
 - [Rust中文Github](https://github.com/rustlang-cn)
-- **QQ-1群：570065685**
-- **QQ-2群：258124913**
 
 ## Awesome
 
